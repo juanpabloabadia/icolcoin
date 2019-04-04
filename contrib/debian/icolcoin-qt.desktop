@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Icolcoin
+Comment=Icolcoin P2P Cryptocurrency
+Comment[fr]=Icolcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Icolcoin, eşten eşe kriptografik sanal para birimi
+Exec=icolcoin-qt %u
+Terminal=false
+Type=Application
+Icon=icolcoin128
+MimeType=x-scheme-handler/icolcoin;
+Categories=Office;Finance;

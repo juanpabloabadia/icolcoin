@@ -1,0 +1,26 @@
+# /etc/conf.d/icolcoind: config file for /etc/init.d/icolcoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/icolcoin/icolcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/icolcoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/icolcoind.pid"
+
+# Where to write icolcoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/icolcoind"
+
+# User and group to own icolcoind process
+#BITCOIND_USER="icolcoin"
+#BITCOIND_GROUP="icolcoin"
+
+# Path to icolcoind executable
+#BITCOIND_BIN="/usr/bin/icolcoind"
+
+# Nice value to run icolcoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

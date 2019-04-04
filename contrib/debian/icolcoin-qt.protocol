@@ -1,0 +1,11 @@
+[Protocol]
+exec=icolcoin-qt '%u'
+protocol=icolcoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

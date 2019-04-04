@@ -1,0 +1,26 @@
+[Unit]
+Description=Icolcoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=icolcoin
+Group=icolcoin
+
+Type=forking
+PIDFile=/var/lib/icolcoind/icolcoind.pid
+
+ExecStart=/usr/bin/icolcoind -daemon -pid=/var/lib/icolcoind/icolcoind.pid \
+          -conf=/etc/icolcoin/icolcoin.conf -datadir=/var/lib/icolcoind
+
+ExecStop=-/usr/bin/icolcoin-cli -conf=/etc/icolcoin/icolcoin.conf \
+         -datadir=/var/lib/icolcoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
